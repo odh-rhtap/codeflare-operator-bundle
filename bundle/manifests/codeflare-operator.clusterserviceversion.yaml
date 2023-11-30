@@ -5,7 +5,7 @@ metadata:
     alm-examples: '[]'
     capabilities: Basic Install
     categories: AI/Machine Learning, Big Data
-    containerImage: quay.io/redhat-user-workloads/open-data-hub-tenant/codeflare-operator/codeflare-operator:bc71fbc5d5200085b0c6cc839a45c68d84584a6f
+    containerImage: quay.io/redhat-user-workloads/open-data-hub-tenant/codeflare-operator/codeflare-operator@sha256:9bd5a3fc34c7800eb143dac00ea0af68e155f652ff299fc7ac6d2e462e388192
     createdAt: "2023-11-30T12:31:58Z"
     operatorframework.io/suggested-namespace: openshift-operators
     operators.operatorframework.io/builder: operator-sdk-v1.27.0
@@ -355,7 +355,7 @@ spec:
                   valueFrom:
                     fieldRef:
                       fieldPath: metadata.namespace
-                image: quay.io/redhat-user-workloads/open-data-hub-tenant/codeflare-operator/codeflare-operator:bc71fbc5d5200085b0c6cc839a45c68d84584a6f
+                image: quay.io/redhat-user-workloads/open-data-hub-tenant/codeflare-operator/codeflare-operator@sha256:9bd5a3fc34c7800eb143dac00ea0af68e155f652ff299fc7ac6d2e462e388192
                 imagePullPolicy: Always
                 livenessProbe:
                   httpGet:
